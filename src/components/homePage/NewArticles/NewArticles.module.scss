@@ -1,0 +1,42 @@
+@import '../../../styles/mixins';
+
+.new-articles {
+  text-align: center;
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 20px;
+  }
+  .all-reviews {
+    text-align: left;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    .one-review {
+      width: 30%;
+      // margin: 20px;
+
+      .img {
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+      }
+      p {
+        margin-bottom: 30px;
+      }
+      a {
+        @include buttonStyleGreen();
+      }
+      span {
+        color: #008329;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import '../../styles/mixins';
+.map {
+  background-image: url('https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.find-job {
+  form {
+    width: 100%;
+
+    .selects {
+      & > div {
+        width: 22%;
+      }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: #5bbc2e;
+      padding: 30px;
+      box-shadow: inset 0 4px 0 rgb(255 255 255 / 50%);
+
+      input,
+      select {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 14px 14px;
+        background: #fff;
+        border-radius: 6px;
+        color: #666666;
+        border: none;
+        height: 45px;
+        &:focus,
+        &:active {
+          outline: none;
+        }
+      }
+      button {
+        @include buttonStyleWhite();
+        width: 100%;
+        border-radius: 6px;
+        padding: 12px;
+      }
+    }
+    .checkboxes {
+      display: flex;
+      align-items: center;
+      border-right: 1px solid #ccc;
+      input {
+        width: 16px;
+        height: 16px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        //border-left: 1px solid #ccc;
+        border-radius: 0;
+        li {
+          padding: 20px;
+          border-right: 1px solid #ccc;
+          border-top: none;
+          border-left: none;
+          &:first-child {
+            border-radius: 0;
+            border-bottom: none;
+            border-left: 1px solid #ccc;
+          }
+          &:last-child {
+            border-radius: 0;
+            border-bottom: none;
+          }
+          &:hover {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+.filtered {
+  margin-bottom: 100px;
+
+  li {
+    &:first-child {
+      border-radius: 0;
+    }
+    &:last-child {
+      border-radius: 0;
+    }
+  }
+}
+.notFound {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}

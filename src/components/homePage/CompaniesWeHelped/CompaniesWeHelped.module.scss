@@ -1,0 +1,49 @@
+.helped-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+  h2 {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  p {
+    text-align: center;
+  }
+  .logo {
+    margin-top: 40px;
+  }
+  .jobify-stats {
+    margin-top: 20px;
+    ul {
+      display: flex;
+
+      li {
+        padding: 20px 50px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-right: 1px solid #ddd;
+        font-size: 22px;
+        border-top: none;
+        border-left: none;
+        span {
+          font-size: 34px;
+          font-weight: 600;
+        }
+        &:last-child {
+          border: none;
+        }
+        &:first-child {
+          border-left: none;
+        }
+        &:hover {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

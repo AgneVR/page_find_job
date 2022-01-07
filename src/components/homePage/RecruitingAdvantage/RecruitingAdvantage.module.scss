@@ -1,0 +1,44 @@
+@import '../../../styles/mixins';
+
+.recruiting-container,
+.recruiting-containerLeft {
+  background-image: url('https://wordpressmu-470622-2067955.cloudwaysapps.com/classic/wp-content/uploads/sites/2/2016/04/hero-image-text-right-darker.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  .wrapper {
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+  }
+  .wrapperLeft {
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+  }
+  color: white;
+  .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    line-height: 1.5;
+    h2 {
+      font-size: 30px;
+      margin-top: 0;
+    }
+    p {
+      font-size: 18px;
+    }
+    a {
+      @include buttonStyleWhite();
+      width: 30%;
+      font-weight: 700;
+      border-radius: 4px;
+    }
+  }
+}
+.recruiting-containerLeft {
+  background-image: url('https://wordpressmu-470622-2067955.cloudwaysapps.com/classic/wp-content/uploads/sites/2/2016/04/hero-image-text-left-darker.jpg');
+}

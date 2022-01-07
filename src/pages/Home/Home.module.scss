@@ -1,0 +1,37 @@
+@import '../../styles/mixins';
+
+.home-container {
+  .welcome-bg {
+    background-image: url(https://wordpressmu-470622-2067955.cloudwaysapps.com/classic/wp-content/uploads/sites/2/2016/07/landing_hero_optimized.jpg);
+    background-position: center center;
+    margin-top: 100px;
+    background-size: cover;
+    height: 475px;
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #666666;
+      height: auto;
+      position: absolute;
+      top: 42%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      h2 {
+        font-size: 34px;
+      }
+    }
+  }
+  a {
+    @include buttonStyleGreen();
+  }
+}
+.all-jobs {
+  h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .job-listings {
+  }
+}

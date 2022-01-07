@@ -1,0 +1,43 @@
+@import '../../styles/mixins';
+
+.post-job-container {
+  margin: 150px 200px 100px;
+
+  .input-style {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    label {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    input,
+    select,
+    textarea {
+      padding: 10px 14px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      color: #666666;
+      font-size: 16px;
+
+      &:focus,
+      &:active {
+        outline: none;
+      }
+      &:focus {
+        border-color: #5bbc2e;
+      }
+    }
+    span {
+      font-size: 13px;
+      margin-top: 4px;
+    }
+  }
+  button {
+    @include buttonStyleGreen();
+    margin-right: 8px;
+  }
+}

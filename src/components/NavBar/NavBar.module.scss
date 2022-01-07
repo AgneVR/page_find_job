@@ -1,0 +1,23 @@
+.header-container {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  z-index: 999;
+  box-shadow: inset rgb(0 0 0 / 10%) 0 -1px 0;
+  box-sizing: border-box;
+  padding: 24px 0;
+  top: 0px;
+
+  .nav-bar {
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: #666666;
+      margin-left: 20px;
+    }
+  }
+}
